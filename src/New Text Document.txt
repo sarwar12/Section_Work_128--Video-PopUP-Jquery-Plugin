@@ -1,0 +1,28 @@
+### Video PopUp JQ Plugin: ( or You use Magnific Popup jquery plugin)
+	https://appleple.github.io/modal-video/
+
+    Include file:
+ =========
+	1)  jquery3.4.1.min.js
+	2)  jquery-modal-video.min.js
+	3)  modal-video.min.css
+
+    Html markup:  (Use CSS)   (data-video-id-> its youtube video id. you can change can this)
+  ==========
+	<a class="video-play-btn" data-video-id="7TUOI23spt0" href=""><i class="fas fa-play"></i></a>  
+              (JS Active Code:)
+	$(".js-modal-btn").modalVideo();
+	$(".video-play-btn").on('click', function(){
+		return false;	 (Disable a tag  or use button tag)
+	});
+
+    (((OR)))
+	<button class="js-modal-btn" data-video-id="7TUOI23spt0">Open Video</button> 
+            (JS Active Code:)
+	$(".js-modal-btn").modalVideo();
+
+NOTE:::
+========
+   Youtube video locally dont play but show popup frame
+   your website upload server then working this video.
+   *** one way you should try this video locally: inspect vedio popup and add https: before this links
